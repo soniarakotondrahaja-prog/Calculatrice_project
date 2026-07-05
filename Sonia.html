@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculatrice</title>
+<link rel="stylesheet" href="Sonia.css">
+<script src="Sonia.js" defer></script>
+</head>
+<body>
+
+  <main class="calc" aria-label="Calculatrice">
+
+    <div class="calc__screen">
+      <div class="calc__history" id="history">&nbsp;</div>
+      <div class="calc__display" id="display">0</div>
+    </div>
+
+    <div class="calc__log-bar">
+      <button class="log-toggle" id="logToggle" aria-expanded="false">Historique ▾</button>
+    </div>
+
+    <div class="calc__log" id="log" hidden>
+      <ul class="calc__log-list" id="logList"></ul>
+      <button class="log-clear" id="logClear">Effacer l'historique</button>
+    </div>
+
+    <div class="calc__pad">
+      <button class="key key--fn" data-action="clear">AC</button>
+      <button class="key key--fn" data-action="erase">⌫</button>
+      <button class="key key--fn" data-action="percent">%</button>
+      <button class="key key--op" data-action="divide">÷</button>
+
+      <button class="key" data-num="7">7</button>
+      <button class="key" data-num="8">8</button>
+      <button class="key" data-num="9">9</button>
+      <button class="key key--op" data-action="multiply">×</button>
+
+      <button class="key" data-num="4">4</button>
+      <button class="key" data-num="5">5</button>
+      <button class="key" data-num="6">6</button>
+      <button class="key key--op" data-action="subtract">−</button>
+
+      <button class="key" data-num="1">1</button>
+      <button class="key" data-num="2">2</button>
+      <button class="key" data-num="3">3</button>
+      <button class="key key--op" data-action="add">+</button>
+
+      <button class="key key--zero" data-num="0">0</button>
+      <button class="key" data-num=".">,</button>
+      <button class="key key--eq" data-action="equals">=</button>
+    </div>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
